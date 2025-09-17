@@ -3,48 +3,47 @@
 .container {
     display: grid;
     column-gap: 10px;
-}
+
 
 /* Assign colors */
-.header { background-color: lightblue; }
-.sidebar { background-color: lightgreen; }
-.c { background-color: rgb(232, 128, 240); }
-.d { background-color: rgb(141, 112, 235); }
-.e { background-color: rgb(65, 54, 180); }
-.footer { background-color: lightcoral; }
+.header { grid-area: header; background-color: lightblue; }
+.sidebar { grid-area: sidebar; background-color: rgb(16, 171, 112); }
+.c { grid-area: c; background-color: rgb(232, 128, 240); }
+.d { grid-area: d; background-color: rgb(141, 112, 235); }
+.e { grid-area: e; background-color: rgba(58, 43, 214, 0.484); }
+.footer { grid-area: footer; background-color: rgb(62, 182, 243); }
 
 /*Small layout */
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "header header"
-          "sidebar c"
-          "main"
-          "sidebar"
-          "footer";
-    }
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+    "header header"
+    "sidebar sidebar"
+    "c d"
+    "e e"
+    "footer footer";
 }
 
 /*Medium layout*/
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
     .container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-areas:
           "header header"
-          "navigation navigation"
-          "main sidebar"
+          "sidebar c"
+          "sidebar d"
+          "sidebar e"
           "footer footer";
     }
 }   
 
 /*Large layout*/
-@media (min-width: 901px) {
+@media (min-width: 991px) {
     .container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas:
-          "header header header header"
-          "sidebar main main navigation"
-          "footer footer footer footer";
+          "header header header"
+          "sidebar c d"
+          "sidebar e e"
+          "footer footer footer";
     }
 }
