@@ -1,17 +1,16 @@
 
-/*Basic grid layout for the page*/
-.container {
-    display: grid;
-    column-gap: 10px;
-
-
-/* Assign colors */
+/* Assign areas and colors */
 .header { grid-area: header; background-color: lightblue; }
 .sidebar { grid-area: sidebar; background-color: rgb(16, 171, 112); }
 .c { grid-area: c; background-color: rgb(232, 128, 240); }
 .d { grid-area: d; background-color: rgb(141, 112, 235); }
 .e { grid-area: e; background-color: rgba(58, 43, 214, 0.484); }
 .footer { grid-area: footer; background-color: rgb(62, 182, 243); }
+
+/*Basic grid layout for the page*/
+.container {
+    display: grid;
+    column-gap: 10px;
 
 /*Small layout */
 grid-template-columns: 1fr 1fr;
