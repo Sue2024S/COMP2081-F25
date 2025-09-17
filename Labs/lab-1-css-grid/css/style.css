@@ -11,6 +11,7 @@
 .container {
     display: grid;
     column-gap: 10px;
+    grid-template-rows: auto auto auto minmax(200px, auto) auto;
 
 /*Small layout */
 grid-template-columns: 1fr 1fr;
