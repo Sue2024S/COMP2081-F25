@@ -7,17 +7,47 @@
 
 		<!-- Bootstrap -->
 		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN), and the Bootstrap JS libraries (jQuery, popper.js, and bootstrap.js) at the bottom of the page template -->
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
 		<!-- STEP 11: Link to your custom styles, then open the CSS file in your code editor -->
 
 	</head>
 	<body>
 		<!-- STEP 2: Build a fluid or a fixed-width container for proper alignment and padding of content-->
+		<div class="container">
+
+		
 
 		<!-- STEP 3: Build out your basic page-level containers, HEADER, MAIN, FOOTER,and add an H1 inside the HEADER to begin the document outline -->
-
+		<header>	
 				<h1>Carousel | Bootstrap</h1>
-
+		</header>
+		<main>
+			<p>The <strong>Carousel</strong> component is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It includes support for previous/next controls and indicators.</p>
+			<div id="carouselExampleIndicators" class="carousel slide"><div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 		<!-- STEP 4: Copy the example code from the Bootstrap documentation (use the handy "COPY" button to the top right of the code example panel), paste here, and adjust formatting -->
 		<!-- STEP 5: Replace any generic elements with more semantic sectioning or phrasing elements - add all appropriate classes to elements -->
 		<!-- STEP 6: Add a caption to each slide -->
@@ -30,9 +60,11 @@
 
 
 			<p><small>Learn more about the <a href="https://getbootstrap.com/docs/4.5/components/carousel/" title="View the Bootstrap documentation for the JavaScript Carousel Component">Bootstrap Carousel JavaScript Component</a>.</small></p>
-
+		</div><!-- container end -->
+		</main>
 		<!-- Include Popper JS, then Bootstrap JS -->
-
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>"></script>
 		<!-- STEP 14: Use custom JavaScript to control the carousel. Attach js/custom.js below -->
 
 		<!-- IMAGE ATTRIBUTIONS
