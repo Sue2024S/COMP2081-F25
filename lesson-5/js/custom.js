@@ -15,3 +15,15 @@ carouselCars.addEventListener('slide.bs.carousel', event => {
 carouselCars.addEventListener('slid.bs.carousel', event => {
     carouselCars.classList.remove("zoomit");
 });
+
+// LAB 2-
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector('#carouselExample');
+
+  if (carousel) {
+    // Re-initialize the carousel 
+    new bootstrap.Carousel(carousel, {
+      keyboard: false // disable both arrow keys
+    });
+  }
+});
