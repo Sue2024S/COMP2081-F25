@@ -69,24 +69,35 @@
 				</nav>
 				<!-- STEP 8: Set the MAIN as a column as well (span of 8) -->
 				<main class="col-8">
-					<section>
+					<section><!--  small intro text outside accordion -->
 						<!-- Thanks to http://www.cheeseipsum.co.uk/ -->
 						<h2>Cheese is Awesome</h2>
 						<p>Cream cheese monterey jack chalk and cheese. Hard cheese stinking bishop mozzarella blue castello macaroni cheese when the cheese comes out everybody's happy roquefort roquefort. St. agur blue cheese parmesan cheese slices roquefort stilton hard cheese when the cheese comes out everybody's happy hard cheese. Babybel mascarpone.</p>
-					</section>
-					<div class="accordion" id="accordion1">
+					</section> <!--  small intro text outside accordion -->
+
+					<!-- accordion that wraps 4 sections start -->
+					
+					<div class="accordion" id="accordionCheese">
+						<!-- 1rst section start -->
 						<section class="accordion-item">
-							<h2 class="accordion-header" id="b1"><img src="images/food-cheese-stinky.png" alt="Cheese" height="250" width="300" /><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"></button>Fresh Cheeses</button></h2>
-							<p>Hard cheese fromage frais caerphilly. Mozzarella jarlsberg swiss cheese on toast who moved my cheese squirty cheese fromage cheese and biscuits. Squirty cheese cheeseburger boursin cheddar boursin port-salut cow boursin. Paneer.</p>
-							<h3 id="b1c1">Cottage Cheese</h3>
-							<p>Roquefort smelly cheese cut the cheese. Pepper jack paneer st. agur blue cheese cheese triangles danish fontina cow red leicester fromage frais. Brie cheese triangles cheeseburger hard cheese fromage frais everyone loves cheese and biscuits parmesan. When the cheese comes out everybody's happy camembert de normandie say cheese the big cheese.</p>
-							<h3 id="b1c2">Cream Cheese</h3>
-							<p>Smelly cheese port-salut rubber cheese. Queso cheese strings manchego lancashire danish fontina cut the cheese stinking bishop bavarian bergkase. Bocconcini parmesan taleggio camembert de normandie stinking bishop taleggio smelly cheese lancashire. Fondue queso babybel gouda camembert de normandie cut the cheese the big cheese camembert de normandie. Fromage frais halloumi cheesy feet.</p>
-							<h3 id="b1c3">Mozzarella</h3>
-							<p>Squirty cheese squirty cheese cheese on toast. Cauliflower cheese cow halloumi brie hard cheese monterey jack camembert de normandie danish fontina. Cheesy grin bocconcini macaroni cheese bavarian bergkase say cheese roquefort bocconcini bocconcini. Swiss pepper jack ricotta.</p>
-							<h3 id="b1c4">Ricotta</h3>
-							<p>Roquefort gouda everyone loves. Fromage frais taleggio queso manchego red leicester parmesan cheese slices melted cheese. Swiss cheese on toast airedale cow macaroni cheese croque monsieur pecorino cream cheese. Cauliflower cheese macaroni cheese cheesecake mascarpone cheesy grin smelly cheese cheese triangles cut the cheese. Macaroni cheese blue castello croque monsieur squirty cheese.</p>
-							<p><a href="#">Back to top</a></p>
+							<h2 class="accordion-header" id="b1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"></button>Fresh Cheeses</button></h2>
+							<div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="b1" data-bs-parent="#accordionCheeses">
+								<div class="accordion-body">
+									<!-- moved image to make accordion heading work -->
+									<img src="images/food-cheese-stinky.png" alt="Cheese" height="250" width="300" />
+									<p>Hard cheese fromage frais caerphilly. Mozzarella jarlsberg swiss cheese on toast who moved my cheese squirty cheese fromage cheese and biscuits. Squirty cheese cheeseburger boursin cheddar boursin port-salut cow boursin. Paneer.</p>
+
+									<h3 id="b1c1">Cottage Cheese</h3>
+									<p>Roquefort smelly cheese cut the cheese. Pepper jack paneer st. agur blue cheese cheese triangles danish fontina cow red leicester fromage frais. Brie cheese triangles cheeseburger hard cheese fromage frais everyone loves cheese and biscuits parmesan. When the cheese comes out everybody's happy camembert de normandie say cheese the big cheese.</p>
+									<h3 id="b1c2">Cream Cheese</h3>
+									<p>Smelly cheese port-salut rubber cheese. Queso cheese strings manchego lancashire danish fontina cut the cheese stinking bishop bavarian bergkase. Bocconcini parmesan taleggio camembert de normandie stinking bishop taleggio smelly cheese lancashire. Fondue queso babybel gouda camembert de normandie cut the cheese the big cheese camembert de normandie. Fromage frais halloumi cheesy feet.</p>
+									<h3 id="b1c3">Mozzarella</h3>
+									<p>Squirty cheese squirty cheese cheese on toast. Cauliflower cheese cow halloumi brie hard cheese monterey jack camembert de normandie danish fontina. Cheesy grin bocconcini macaroni cheese bavarian bergkase say cheese roquefort bocconcini bocconcini. Swiss pepper jack ricotta.</p>
+									<h3 id="b1c4">Ricotta</h3>
+									<p>Roquefort gouda everyone loves. Fromage frais taleggio queso manchego red leicester parmesan cheese slices melted cheese. Swiss cheese on toast airedale cow macaroni cheese croque monsieur pecorino cream cheese. Cauliflower cheese macaroni cheese cheesecake mascarpone cheesy grin smelly cheese cheese triangles cut the cheese. Macaroni cheese blue castello croque monsieur squirty cheese.</p>
+									<p><a href="#">Back to top</a></p>
+								</div>
+							</div> <!-- end collapse 1-->
 						</section>
 						<section>
 							<h2 id="b2"><img src="images/food-cheese-very-stinky.png" alt="Cheese" height="242" width="300" />Soft Cheeses</h2>
