@@ -30,15 +30,27 @@
 				<!-- STEP 7: Set the NAV as a column (span of 4) and add a unique id -->
 				<nav id="pageNav" class="col-4">
 				<!-- STEP 9: Add class="sticky-top" to the UL element below so it stays on the page while scrolling  -->
-					<ul class="sticky-top">
-						<li><a href="#b1" title="">Fresh Cheeses</a>
-							<ul>
-								<li><a href="#b1c1" title="">Cottage Cheese</a></li>
-								<li><a href="#b1c2" title="">Cream Cheese</a></li>
-								<li><a href="#b1c3" title="">Mozzarella</a></li>
-								<li><a href="#b1c4" title="">Ricotta</a></li>
-							</ul>
-						</li>
+					<div class="sticky-top" style="top:1rem;">
+						<h2 class="h5">Types of Cheese</h2>
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#b1" title="">Fresh Cheeses</a> 
+								<ul class="nav flex-column ms-3">
+									<li class="nav-item">
+										<a class="nav-link small" href="#b1c1" title="">Cottage Cheese</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link small" href="#b1c2" title="">Cream Cheese</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link small" href="#b1c3" title="">Mozzarella</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link small" href="#b1c4" title="">Ricotta</a>
+									</li>
+								</ul>
+							</li>
+						</nav>	
 						<li><a href="#b2" title="">Soft Cheeses</a>
 							<ul>
 								<li><a href="#b2c1" title="">Camembert</a></li>
