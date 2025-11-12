@@ -20,6 +20,7 @@
             margin: 12px;
             transition: transform 0.5s ease, box-shadow 0.3s ease;
             transform-origin: center center;
+            border: radius 6px;
         }
         /* transforms  */
         p#rotate {
@@ -57,6 +58,17 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.25);
         }
 
+        /* 5th paragraph */
+        p#fifth {
+            background-color: deepskyblue;
+            transform: translateY(0) rotate(0) scale(1);
+            border-radius: 8px;
+            animation: dance 4s ease-in-out infinite;
+        }
+        p#fifth:hover {
+            animation-play-state: paused;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
@@ -64,5 +76,6 @@
     <p id="scale">Scale me.</p>
     <p id="skew">Skew me.</p>
     <p id="translate">Translate me.</p>
+    <p id="fifth">Animate me</p>
 </body>
 </html>
