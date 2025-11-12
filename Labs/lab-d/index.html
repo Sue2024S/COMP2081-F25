@@ -21,6 +21,7 @@
             transition: transform 0.5s ease, box-shadow 0.3s ease;
             transform-origin: center center;
         }
+        /* transforms  */
         p#rotate {
             transform: rotate(15deg);
             background-color: orange;
@@ -37,6 +38,25 @@
             transform: translateX(0);
             background-color: hotpink;
         }
+
+        /* hover transitions */
+         p#rotate:hover {
+            transform: rotate(360deg) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        p#scale:hover {
+            transform: scale(1.6) rotate(-5deg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        p#skew:hover {
+            transform: skew(-20deg, 10deg) rotate(3deg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        p#translate {
+            transform: translateX(0);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
     </style>
 </head>
 <body>
