@@ -22,7 +22,8 @@ html {
 }
 #perspective .panel:hover {
     /* STEP 1a: Use the perspective() and the rotateY() functions */
-    
+    perspective: 400px;
+    transform: rotateZ(40deg);
     /* STEP 1b: Try the rotateX() function, instead */
     /* STEP 1c: Modify the degrees to some other value */
 }
@@ -35,7 +36,7 @@ html {
     border: 1px solid #CCC;
     margin: 40px;
     /* STEP 3a: Add perspective to the parent element */
-    
+    perspective: 500px;
     /* STEP 4: Modify the perspective origin - it defaults to the center */
     
 }

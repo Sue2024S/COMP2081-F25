@@ -1,22 +1,25 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'););
 
 html {
-	font: 150%/1.4 sans-serif;
+	font: 150%/1.4 Roboto, sans-serif;
 }
 /* STEP 3: Apply a background gradient image to the page (http://colorzilla.com/gradient-editor/) */
 body {
-	
+	background-color: aqua;
 }
 #container {
 	margin: 1rem;
 }
 /* STEP 4: CSS Image Replacement (https://css-tricks.com/the-image-replacement-museum/) */
 header h1 {
-
+	height: 160px;
+	width: 250px;
+	background: url("../images/silly-putty.png") no-repeat;
 }
 
 header h1 strong {
-
+	visibility: hidden;
 }
 /* STEP 5: Add the 'Chewy' font from Google's Font Service and apply it to all H2 and H3 elements - add the @import to the top of the CSS file */
 h2, h3 {
@@ -28,15 +31,31 @@ h2, h3 {
 -------------------------------------------------- */
 /* STEP 6a: Control the origin of the transform (play with this in the dev tools in the browser using rotation */
 #transforms h3:nth-of-type(2) {
+	transform: rotate(30deg);
+	display: inline-block;
+	transform-origin: 50% 50%;
+	outline: 2px dashed yellow;
 }
 /* STEP 7: Translate the element (X, Y, and combined) */
 #transforms h3:nth-of-type(3) {
+	display: inline-block;
+	outline: 2px dashed orange;
+	transform: scale(x2);
+	transform: scale(x3);
+	transform-origin: 0% 50%;
+
 }
 /* STEP 8: Scale the element (X, Y, and combined) */
 #transforms h3:nth-of-type(4) {
 }
 /* STEP 9: Skew the element (X, Y, and combined) */
 #transforms h3:nth-of-type(5) {
+	display: inline-block;
+	outline: 2px dashed red;
+	transform-origin: right center;
+	transform: skewX(-30deg);
+	transform: skewY(45deg);
+	transform: ;
 }
 
 /* STEP 10: Rotate the element (X, Y, and Z) */
@@ -45,6 +64,10 @@ h2, h3 {
 
 /* STEP 11: Combining transforms */
 #transforms h3:nth-of-type(7) {
+	display: inline-block;
+	outline: 2px dashed green;
+	/* transform: scale */
+
 }
 
 /* TRANSITIONS

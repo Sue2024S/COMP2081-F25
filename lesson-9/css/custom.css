@@ -1,8 +1,14 @@
 /* Custom CSS */
 /* STEP 2a: Use Google Web Fonts API to attach the "Lobster" font - note that there are two methods: Standard and @import (https://fonts.google.com/) */
-
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 /* /* STEP 3a: Use the font face kit at Font Squirrel to generate @font-face for HoneyScript Light (https://www.dafont.com/Honey-Script.font) - Read the legal disclaimer at the bottom of the home page - it is your legal responsibility to check the terms of use for fonts (open the generated stylesheet.css) */
-
+@font-face {
+	font-family: "HoneyScript Light";
+	src: url('Webfont.eot') format('embedded-opentype'),
+		 url('../fonts/HoneyScript-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* STEP 4a: Use the font face kit at Font Squirrel to generate @font-face for "Komika Title Regular" (https://www.fontsquirrel.com/fonts/komika-title) - a better fit than "Lobster" - only generate the WOFF and WOFF2 versions of the font */
 
@@ -22,7 +28,7 @@ html	{
 }
 body {
 	/* STEP 1: Set base font settings to 120% font-size, 1.4 line-height, Futura (font-style, font-variant, font-weight, font-size, line-height, and font-family) (https://developer.mozilla.org/en-US/docs/Web/CSS/font) */
-	;
+	font: normal normal 120%/1.4 Futura, 'Trebuchet MS', Arial, sans-serif;
 	color: #111;
 	width: 480px;
 	margin: 0 auto;
@@ -43,9 +49,16 @@ header p:first-child {
 header p:first-child, header address {
 	background-color: rgb(212, 0, 31);
 }
+
+/*  We removed this because it has been already coopied below.just-another-hand-regular {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
 header address {
 	/* STEP 2b: Set "Lobster" as the first in the font stack for the author's name */
-	font-family: Impact, Arial, sans-serif;
+	font-family: "Just Another Hand", Impact, Arial, sans-serif;
 	/* STEP 5b: Replace "Lobster" above with "Sign Painter Upright" as the first font in the stack */
 	/* STEP 5d: Size up the font to emulate the original design - note the difference between em and rem (root em) */
 	font-size: 3em;
