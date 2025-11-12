@@ -10,11 +10,16 @@
             background-repeat: no-repeat;
         }
         p {
+            display: inline-block;
             height: 100px;
             width: 100px;
             color: white;
             font-weight: bold;
             text-align: center;
+            line-height: 100px;
+            margin: 12px;
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+            transform-origin: center center;
         }
         p#rotate {
             background-color: orange;
