@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Animated SVG Bar — LabE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Animated SVG Bar (0% → 75%)</h1>
+    <svg viewBox="0 0 800 120"></svg>  
+    <!-- decided to try a fun coloring       -->
+        <defs>
+            <linearGradient id="barGradient" x1="0" x2="1">
+              <stop offset="0%" stop-color="#7bd389" />
+              <stop offset="55%" stop-color="#6ec1ff" />
+              <stop offset="100%" stop-color="#ffb86b" />
+            </linearGradient>
+        </defs>
+
+        <rect x="40" y="36" width="720" height="36" rx="8" ry="8"/>
+
+        <rect x="40" y="36" width="720" height="36"/>
+
+        <text x="400" y="54">75%</text>
+
+        <text x="40" y="24">Completion</text>
+    </svg>
+
+    <script src="script.js"></script>
+  </body>
+</html>
